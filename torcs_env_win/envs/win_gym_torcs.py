@@ -43,11 +43,11 @@ class WinTorcsEnv(gym.Env):
 
         if self.windows:
             if self.visualize:
-                subprocess.Popen('wtorcs.bat', cwd='C:\\Program Files (x86)\\torcs\\bin', shell=True)
+                subprocess.Popen('wtorcs.bat', shell=True)
                 time.sleep(2)
                 pyautogui.press('enter', presses=4, interval=0.2)
             else:
-                subprocess.Popen('wtorcs.bat -T', cwd='C:\\Program Files (x86)\\torcs\\bin', shell=True)
+                subprocess.Popen('wtorcs.bat -T', shell=True)
                 time.sleep(2)
         else:
             os.system('pkill torcs')
@@ -236,11 +236,11 @@ class WinTorcsEnv(gym.Env):
     def reset_torcs(self):
         if self.windows:
             if self.visualize:
-                subprocess.Popen('wtorcs.bat', cwd='C:\\Program Files (x86)\\torcs\\bin', shell=True)
+                subprocess.Popen('wtorcs.bat', shell=True)
                 time.sleep(2)
                 pyautogui.press('enter', presses=4, interval=0.2)
             else:
-                subprocess.Popen('wtorcs.bat -T', cwd='C:\\Program Files (x86)\\torcs\\bin', shell=True)
+                subprocess.Popen('wtorcs.bat -T', shell=True)
                 time.sleep(2)
         else:
             os.system('pkill torcs')
