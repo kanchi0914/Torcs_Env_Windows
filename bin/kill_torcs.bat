@@ -8,5 +8,4 @@ IF NOT ERRORLEVEL 1  (
 ) ELSE (
     ECHO wtorcsが起動していません．
 )
-wtorcs.exe %*
-exit /b 0
+
