@@ -2,10 +2,10 @@
 This is a modified version of [gym-torcs](https://github.com/ugo-nama-kun/gym_torcs) for windows user.
 
 ## Requirement 
-python 3
-gym
-Torcs
-torcs src-server patch
+python 3  
+gym  
+Torcs  
+torcs src-server patch  
 
 ## Usage
 1. Install Torcs and its src-server patch according to the [Manual](https://arxiv.org/pdf/1304.1672.pdf)
